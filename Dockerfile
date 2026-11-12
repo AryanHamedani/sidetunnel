@@ -1,4 +1,4 @@
-FROM alpine:3.23
+FROM alpine:3.24
 RUN apk add --no-cache openvpn python3 iptables iproute2
 COPY app/ /app/
 RUN chmod +x /app/status.py && ln -s /app/status.py /usr/local/bin/status
